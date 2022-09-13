@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" type="image/png"  id="shortcut icon"/>
+  <link rel="stylesheet" href="settings.css">
+  <script src="themes.js"></script>
+  <title>Settings</title>
+</head>
+  
+<body onload="checkCookie()">
+<div class="dropdown">
+  <button class="dropbtn">≡</button>
+  <div class="dropdown-content">
+    <a href="/bookmark">Bookmarklets</a>
+    <a href="/"">Home</a>
+    <a href="/settings">Settings</a>
+    <a href="/cryos">cryOS</a>
+  </div>
+</div>
+  <div id="container">
+    <div id="theme" class="custom-select">
+    <p>Theme:</p>
+    <select name="theme" id="theme-select">
+      <option value="vine boom">Boo</option>
+      <option value="red">Red</option>
+      <option value="lime">Lime</option>
+      <option value="blue">Blue</option>
+    </select>  
+  </div> 
+  <br>
+  <br>
+  <div id="proxy" class="custom-select">
+    <p>Proxy:</p>
+    <select name="proxy" id="proxy-select" onchange="update()">
+      <option value="vine boom">Boo</option>
+      <option value="uv">Ultraviolet</option>
+      <option value="wom">Womginx</option>
+      <option value="ram">Rammerhead</option>
+    </select>  
+  </div>
+  <div id="cloak">
+    <input id="thelinkthinglol" placeholder="Title or icon link">
+    <button onclick="Title()">Title</button>
+    <button onclick="icon()">Icon</button>
+  </div>  
+  </div>
+  
+  
+  
+</body>
+
+</html>
+
