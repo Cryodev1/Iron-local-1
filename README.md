@@ -2,3 +2,5 @@
 To install on mac just run the code below in a terminal
 # Code
 xcode-select --install; curl -o- https://raw.githubusercontent.com/Cryodev1/Iron-local-1/main/lul.sh | bash
+# How to open the terminal
+Go to the search glass at the top right of your screen and search terminal
