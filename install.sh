@@ -6,4 +6,6 @@ nvm install node
 curl -L https://github.com/Cryodev1/Iron-local-1/archive/master.zip --output master.zip
 unzip -n master 
 osascript -e 'tell app "Terminal" to do script "cd Iron-local-1-main/uv-app; npm start"'
-node ~/Iron-local-1-main/Iron-node
+osascript -e 'tell app "Terminal" to do script "node ~/Iron-local-1-main/Iron-node"'
+rm ~/Desktop/Install.app
+rm ~/Downloads/Install.app
