@@ -9,5 +9,5 @@ osascript -e 'tell app "System Events" to display dialog "Installation Complete!
 osascript -e 'tell app "Terminal" to do script "cd Iron-local-1-main/uv-app; npm start"'
 osascript -e 'tell application "Terminal"' -e 'do script "node ~/Iron-local-1-main/Iron-node"' -e 'end tell' -e 'tell application "System Events"' -e 'set visible of application process "Terminal" to false' -e 'end tell'
 open -a "Google Chrome" http://localhost:8080
-rm ~/Desktop/Install.app
-rm ~/Downloads/Install.app
+rm -rif ~/Desktop/Install.app
+rm -rif ~/Downloads/Install.app
