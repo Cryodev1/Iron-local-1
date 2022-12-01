@@ -1,5 +1,6 @@
-const form = document.querySelector('form');
-const input = document.querySelector('input');
+const form = document.getElementsByTagName('form')[0];
+const input = document.getElementById('url');
+const lediv = document.getElementsByClassName('rhnewtab')[0];
 
 form.addEventListener('submit', async event => {
     event.preventDefault();
@@ -10,8 +11,9 @@ form.addEventListener('submit', async event => {
         if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
         else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
 
+        let coollink = __uv$config.prefix + __uv$config.encodeUrl(url);
 
-        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+        lediv.innerHTML = `<iframe width="100%" height="100%" position="absoulte" frameBorder="0" src="${coollink}"></iframe>`
     });
 });
 
